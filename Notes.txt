@@ -4,4 +4,9 @@ javac <java file name>.java
 how to execute/run a java program?
 java <java file name>
 
-Amit
+***************************************
+git clone <repository url>
+git checkout <branch name>
+git pull
+git commit 
+git push
