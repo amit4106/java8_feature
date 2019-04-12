@@ -1,0 +1,5 @@
+How to compile java file
+javac <java file name>.java
+
+how to execute/run a java program.
+java <java file name>
