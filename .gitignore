@@ -1,5 +1,7 @@
 # Compiled class file modified by Amit.
 *.class
+*.classpath
+*.settings/*.*/
 
 # Log file
 *.log

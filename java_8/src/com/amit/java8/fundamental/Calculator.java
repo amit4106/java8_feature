@@ -7,7 +7,9 @@ public class Calculator {
 	};
 
 	public int substract(int e, int f) {
+		
 		int g = e - f;
+		System.out.println(g);
 		return g;
 	};
 
