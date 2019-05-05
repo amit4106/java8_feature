@@ -4,14 +4,14 @@ public class Calculator {
 	public int add(int a, int b) {
 		int c = a + b;
 		return c;
-	};
+	}
 
 	public int substract(int e, int f) {
 		
 		int g = e - f;
 		System.out.println(g);
 		return g;
-	};
+	}
 
 	public static void main(String[] args) {
 
