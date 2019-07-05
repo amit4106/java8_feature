@@ -50,7 +50,7 @@ public static void m1() {
 //		System.out.println(i);
 	}
 
-	public static void displayRangeoFDataType() {
+	public static void displayRangeOfDataType() {
 		int c;// local variable.//stack
 		System.out.println(Byte.MIN_VALUE + " " + Byte.MAX_VALUE);
 		System.out.println();

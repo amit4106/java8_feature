@@ -2,41 +2,45 @@ package com.amit.java8.fundamental;
 
 public class ArrayDemo {
 
-	public int findMin(int[] value) {
-	int minValue=value[0];
-//	for(int i=1; i<values.length; i++) {
-//		if(max<values[i]) {
-//			max=values[i];
-//		}
-//	}
-	for(int i=1;i<value.length;i++) {
-		if (value[i]<minValue) {
-			minValue=value[i];
-		}
-		
-	}
-		
-		return minValue;
+	public static  int findMin(int[] source) {
 	
+	// take first value from the given array and assume it is a min value.
+		int min=source[0];
+		// traverse the array the and compare if min value is greater than swap otherwise proceed to next value.
+		
+		for(int i=0;i<source.length;i++) {
+			if(min>source[i]) {
+				min=source[i];
+			}
+		}
+		return min;
 	}
+	
+	public static  int findMax(int[] source) {
+		// take a value from array and find the max value.
+		int max=source[0];
+		//to check the total value of array and swap with the max number.
+		for (int i=0; i<source.length;i++) {
+			if(max<source[i]) {
+				max=source[i];
+			}
+				}
+		
+		return max;
+	}
+	
+	
+	
+	
 	public static void main(String[] args) {
-int [] a=new int[10];
-a[0]=10;
-a[1]=20;
-a[2]=30;
-a[3]=40;
-a[4]=50;
-a[5]=60;
-a[6]=70;
-a[7]=80;
-a[8]=90;
-a[9]=92;
-//for(int i=0; i<a.length; i++) {
-	//System.out.println(a[i]);
-//}
-ArrayDemo ad=new ArrayDemo();
-int minValue=ad.findMin(a);
-System.out.println(minValue);
+		int[] source= new int[] {20,2,12,100,50,90,85};
+	int max=	findMax(source);
+	int min= findMin(source);
+	if(max==100 && min==2) {
+		System.out.println("Pass");
+	}else {
+		System.out.println("Fail");
+	}
 	}
 
 }
