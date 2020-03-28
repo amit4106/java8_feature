@@ -16,7 +16,7 @@ public class OverloadingDemo {
 	public static void main(String [] args) {
 		OverloadingDemo od=new OverloadingDemo();
 		od.m1(10,10f);
-		od.m1(10,10,10,10,10,10,10,10);
+		//od.m1(10,10,10,10,10,10,10,10);
 				
 	}
 	

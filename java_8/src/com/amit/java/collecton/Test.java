@@ -9,9 +9,12 @@ public class Test {
 	
 	public static void main(String[] args) {
 
-	//MyArrayList<Vector> al2=new MyArrayList<>();
+	Generic en=new Generic();
 	
-		
+	ArrayList<Runnable> al=new ArrayList<>();
+	
+	en.m3(al);
+	
 	}
 
 }

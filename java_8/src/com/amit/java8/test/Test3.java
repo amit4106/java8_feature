@@ -1,25 +1,16 @@
 package com.amit.java8.test;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.Scanner;
 
 public class Test3 {
 	
 	public static void main(String[] args) {
-	
-		List<Integer> al=new ArrayList<>();
-		al.add(10);
-		al.add(20);
-		al.add(30);
-		al.add(40);
-		al.add(50);
-		//al.add("amit");
-		al.remove(2);
-		//System.out.println(al);
-		//al.forEach(System.out::println);
-		al.stream().forEach(System.out::println);
-			
+Scanner sc=new Scanner(System.in);	
+System.out.println("Enter First Numbers to perform Division");
+int firstNum=sc.nextInt();
+System.out.println("Please enter second number");
+int secondNum=sc.nextInt();
+float result=firstNum/secondNum;
+System.out.println("Division of "+ firstNum + " And "+ secondNum+ " is " +result);
 	}
-	
-	}
-	
+}

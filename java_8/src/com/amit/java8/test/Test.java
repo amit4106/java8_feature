@@ -9,7 +9,7 @@ public class Test {
 		
 		for(no=2;no<=100;no=no+2) {
 			
-		System.out.print(no+",");
+		System.out.print(no+", ");
 		}
 	
 //		int no=1;

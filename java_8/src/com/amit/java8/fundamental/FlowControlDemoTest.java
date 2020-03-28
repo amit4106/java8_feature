@@ -4,7 +4,7 @@ public class FlowControlDemoTest {
 
 	public static void main(String[] args) {
 		FlowControlDemo fc=new FlowControlDemo();
-		fc.getDiet("Friday");
+		fc.getDiet("Sunday");
 				
 	}
 
