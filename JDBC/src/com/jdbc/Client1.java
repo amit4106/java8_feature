@@ -18,6 +18,8 @@ public class Client1 {
 	//temp.save(st);
 	//temp.delete(4);
 	//temp.findById(2);
+	Student stu=new Student();
+	stu.setSid(3);
 	temp.update(stu);
 	}
 }

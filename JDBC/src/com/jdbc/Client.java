@@ -2,6 +2,8 @@ package com.jdbc;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
@@ -13,6 +15,7 @@ public class Client {
 
 		try {
 			con = JDBCUtil.getConnection();
+			
 			// String sql = "delete from student where sid=112";
 			String sql = "update student set State='MP' where sid=1";
 			st = con.createStatement();
@@ -23,9 +26,7 @@ public class Client {
 				System.out.println("record not found");
 			}
 		} catch (SQLException e) {
-		} finally {
-			JDBCUtil.closeResource(con, st);
-		}
+		} 
 	}
 
 }

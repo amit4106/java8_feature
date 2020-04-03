@@ -19,7 +19,7 @@ public class JDBCUtil {
 	return con;
 	}
 	
-	public static void closeResource(Connection con, Statement st) {
+	/*public static void closeResource(Connection con, Statement st) {
 			try {
 				if(con!=null) {
 					con.close();
@@ -29,7 +29,7 @@ public class JDBCUtil {
 				}
 			}catch (SQLException e) {
 			}
-		}
+		}*/
 	}
 	
 

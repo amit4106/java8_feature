@@ -14,9 +14,7 @@ public class JDBCTemplate {
 	private static final String SINGLE_QUOTE = "'";
 	private static final String COMMA = ",";
 
-	PreparedStatement ps = null;
-	Connection con = JDBCUtil.getConnection();
-	Statement st = null;
+	
 
 	public void save(Student stu) {
 
@@ -28,9 +26,8 @@ public class JDBCTemplate {
 		// stu.getSid(), stu.getFirstName(), stu.getLastName(),stu.getState());
 		// System.out.println(sql1);
 
-		try {
-			st = con.createStatement();
-			ps = con.prepareStatement("insert into student values(?,?,?,?)");
+		try (Connection con = JDBCUtil.getConnection();
+				PreparedStatement ps = con.prepareStatement("insert into student values(?,?,?,?)")){
 			ps.setInt(1, stu.getSid());
 			ps.setString(2, stu.getFirstName());
 			ps.setNString(3, stu.getLastName());
@@ -43,9 +40,7 @@ public class JDBCTemplate {
 			}
 		} catch (SQLException e) {
 			e.printStackTrace();
-		} finally {
-			JDBCUtil.closeResource(con, ps);
-		}
+		} 
 	}
 
 	public void delete(int sid) {
@@ -65,9 +60,7 @@ public class JDBCTemplate {
 			}
 		} catch (SQLException e) {
 			// TODO: handle exception
-		} finally {
-			JDBCUtil.closeResource(con, ps);
-		}
+		} 
 
 	}
 
@@ -77,18 +70,16 @@ public class JDBCTemplate {
 		ResultSet rs=null;
 		try {
 			con = JDBCUtil.getConnection();
-			String sql = ("update student set sid ='?' where sid is'?'");
+			String sql = ("update student set sid =? where sid =?");
 			ps = con.prepareStatement(sql);
-			int sid = stu.getSid();
-			ps = con.prepareStatement(sql);
+			ps.setInt(1, 999);
+			ps.setInt(2	, 3);
 			int x = ps.executeUpdate();
 			if(x==1)
 				System.out.println("record updated");
 			else {System.out.println("record not updated");}
 		}catch (SQLException e) {
 			// TODO: handle exception
-		}finally {
-			JDBCUtil.closeResource(con, ps);
 		}
 
 	}
@@ -99,13 +90,11 @@ public class JDBCTemplate {
 	}
 
 	public Student findById(int id) {
-		Connection con=null;
-		PreparedStatement ps=null;
 		ResultSet rs=null;
-		try {
-			con = JDBCUtil.getConnection();
-			String sql = ("select * from student where sid ='?'");
-			ps = con.prepareStatement(sql);
+		String sql = ("select * from student where sid ='?'");
+		try (Connection con=JDBCUtil.getConnection();
+				PreparedStatement ps= con.prepareStatement(sql)){
+			
 			rs = ps.executeQuery();
 			if(rs==null)
 				System.out.println("recored fetched");
@@ -113,10 +102,7 @@ public class JDBCTemplate {
 			
 		}catch (SQLException e) {
 			// TODO: handle exception
-		}finally {
-			JDBCUtil.closeResource(con, ps);
 		}
 		return null;
 	}
-
 }
