@@ -1,5 +1,6 @@
 package com.jdbc;
 
+import java.util.List;
 import java.util.Scanner;
 
 public class Client1 {
@@ -18,8 +19,16 @@ public class Client1 {
 	//temp.save(st);
 	//temp.delete(4);
 	//temp.findById(2);
-	Student stu=new Student();
+	
+	/*Student stu=new Student();
 	stu.setSid(3);
-	temp.update(stu);
+	temp.update(stu);*/
+	
+	//List<Student> students = temp.findByState("WB");
+	//students.forEach(System.out::println);
+	//temp.findAll();
+	//temp.findAll_Scrollable();
+	temp.findAll_Scrollable_Concurrency();
+	
 	}
 }

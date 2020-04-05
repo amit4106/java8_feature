@@ -10,7 +10,7 @@ import java.sql.Statement;
 public class DataBaseInfo {
 
 	public static void main(String[] args) {
-		try (Connection con = JDBCUtil.getConnection();) {
+		try (Connection con = JDBCUtil.getOracleConnection();) {
 			DatabaseMetaData md = con.getMetaData();
 			Statement st = con.createStatement();
 			ResultSet rs = st.executeQuery("Select * from student ");
@@ -26,6 +26,8 @@ public class DataBaseInfo {
 			System.out.println(md.getDatabaseMinorVersion());
 			System.out.println(md.getDriverName());*/
 			// to be discuss ResultSet DatabaseMetaData.
+			
+			System.out.println(md.supportsResultSetConcurrency(ResultSet.TYPE_SCROLL_SENSITIVE, ResultSet.CONCUR_UPDATABLE));
 			
 		} catch (SQLException e) {
 

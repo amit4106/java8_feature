@@ -25,9 +25,9 @@ public class ClientTwo {
 			}
 		} catch (SQLException e) {
 
-		} finally {
+		} /*finally {
 			JDBCUtil.closeResource(con, st);
-		}
+		}*/
 	}
 
 }
