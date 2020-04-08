@@ -38,23 +38,12 @@ public class BatchUpdate {
  *		1. Add_Book(Book b):boolean
  *		2. Verify user(String s, String s1):boolean
  *		3. Delete book(String s):int
- *		4. Update book(book b):int
+ *		4. Update book(int b):int
  *		5. Get bookByAuthor(String authorName):List<Book>
  *		6. Get booksByName(String s):List<Book>
  *		7. Get allBooks():List<Books>
  * 		8. Get booksByCost(Double d):List<Book>
  * 
  * Q:Create a book Class having atrributs book_id, book_name, author_name, publication, cost, edtion
- * 
- * 
- * 
- * 
- * 
- * 
- * 
- * 
- * 
- * 
- * 
- * 
+ *  
  * */

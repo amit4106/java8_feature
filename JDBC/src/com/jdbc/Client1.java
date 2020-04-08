@@ -28,7 +28,7 @@ public class Client1 {
 	//students.forEach(System.out::println);
 	//temp.findAll();
 	//temp.findAll_Scrollable();
-	temp.findAll_Scrollable_Concurrency();
+	//temp.findAll_Scrollable_Concurrency();
 	
 	}
 }
