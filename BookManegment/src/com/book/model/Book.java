@@ -1,6 +1,6 @@
-package com.book.details;
+package com.book.model;
 
-public class BookDetails {
+public class Book {
 	private int bookID;
 	private String bookName;
 	private String authorName;
@@ -79,7 +79,7 @@ public class BookDetails {
 	public void setEdtion(String edtion) {
 		this.edtion = edtion;
 	}
-	public BookDetails(int bookID, String bookName, String authorName, String publication, double cost, String edtion) {
+	public Book(int bookID, String bookName, String authorName, String publication, double cost, String edtion) {
 		super();
 		this.bookID = bookID;
 		this.bookName = bookName;

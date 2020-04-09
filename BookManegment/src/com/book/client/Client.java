@@ -1,12 +1,15 @@
 package com.book.client;
 
-import com.services.BookServices;
+import com.book.model.Book;
+import com.book.services.BookServices;
 
 public class Client {
 
 	public static void main(String[] args) {
 		
 		BookServices bs = new BookServices();
-		bs.addBook(true);
+		Book book=new Book(29, "The War","John","TheFort", 263.40, "Vol -03");
+		int count = bs.addBook(book);
+		System.out.println(count);
 	}
 }
