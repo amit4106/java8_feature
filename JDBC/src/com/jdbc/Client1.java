@@ -21,7 +21,7 @@ public class Client1 {
 	//temp.findById(2);
 	
 	/*Student stu=new Student();
-	stu.setSid(3);
+	stu.setSid(4);
 	temp.update(stu);*/
 	
 	//List<Student> students = temp.findByState("WB");

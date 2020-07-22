@@ -19,9 +19,9 @@ public class BookServices {
 		return false;
 	}
 
-	public int deleteBook(String s) {
-
-		return 0;
+	public int deleteBook(int book) {
+		BookDao dao=new BookDao();
+		return dao.deleteBook(book);
 	}
 
 	public int updateBook(int i) {

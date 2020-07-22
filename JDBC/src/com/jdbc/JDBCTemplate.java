@@ -107,7 +107,6 @@ public class JDBCTemplate {
 			}
 
 		} catch (SQLException e) {
-			// TODO: handle exception
 		}
 		return stu;
 	}
