@@ -17,7 +17,7 @@ public class Localization {
 			break;
 		}
 		case "UK":{
-			System.out.println("Hello 2");
+			System.out.println("Hello:2");
 			break;
 		}
 		default:{
@@ -29,7 +29,7 @@ public class Localization {
 	public static void main(String[] args) {
 		Locale locale=Locale.getDefault();
 		System.out.println(locale.getLanguage());
-		System.out.println(locale.getCountry());
+//		System.out.println(locale.getCountry());
 		
 //		Q.How many ways you can create an Object of the Locale?
 //		1.using Constructor
@@ -45,6 +45,6 @@ public class Localization {
 		Locale[] availableLocales = Locale.getAvailableLocales();
 //		Arrays.stream(availableLocales).forEach(l->System.out.println(l.getLanguage()+" "+l.getDisplayLanguage()+" "+
 //		l.getCountry()+" "+l.getDisplayCountry()));
-		printContentByLocale("US");
+	//	printContentByLocale("US");
 	}
 	}

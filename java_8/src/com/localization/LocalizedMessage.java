@@ -23,7 +23,7 @@ package com.localization;
 
 	public class LocalizedMessage {
 		public static void main(String[] args) {
-			Locale.setDefault(new Locale("en","US"));
+			Locale.setDefault(new Locale("english","US"));
 			ResourceBundle rb=ResourceBundle.getBundle("message1");
 			String msg = rb.getString("welcome");
 			System.out.println(msg);
