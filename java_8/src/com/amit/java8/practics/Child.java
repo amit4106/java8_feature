@@ -1,12 +1,9 @@
 package com.amit.java8.practics;
 
-public class Child extends Parent {
-	
-	Child(String s){
-		super(s);
-	}
-	
-	public static int get() {
-		return 10;
-	}
+public class Child extends Parent1  {
+
+public static void main(String[] args) {
+
+float i1=(float)d;
+}
 }
