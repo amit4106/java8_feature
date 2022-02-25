@@ -9,6 +9,7 @@ public class Test {
 		al.add("zone");
 		al.add(null);
 //		al.add(10); error
+		
 	}
 public static void main(String[] args) {
 	Test t=new Test();
