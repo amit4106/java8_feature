@@ -1,14 +1,15 @@
 package com.amit.java8.test;
 
+import com.amit.java8.practics.Test;
+
 public class Test12 {
 
+	protected int j=12;
+	public void m1() {
+		j=10;
+	}
 	
-public static void main(String[] args) {
-for(int i=1;i<=10;i++) {
-	System.out.print(i +",");
-	//i++;
 }
-}}
 /*
  * ctrl + shift R to rename the method name.
  */

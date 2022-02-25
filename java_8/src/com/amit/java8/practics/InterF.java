@@ -1,6 +1,7 @@
 package com.amit.java8.practics;
 
+@FunctionalInterface
 public interface InterF {
-	 void m1();
-	 void m2();
+	 public void m1();
+	
 }

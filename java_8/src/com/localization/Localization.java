@@ -33,7 +33,7 @@ public class Localization {
 		
 //		Q.How many ways you can create an Object of the Locale?
 //		1.using Constructor
-		Locale locale1=new Locale("fr");
+		Locale locale1=new Locale("Fr");
 //		Way 2
 		Locale locale2=Locale.CANADA;
 //		way 3

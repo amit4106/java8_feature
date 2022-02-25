@@ -9,27 +9,31 @@ package com.localization;
 	// Searching Order for the ResourceBundle
 	//step 1: The search starts by looking for an exact match for the ResourceBundle with the full name.
 	//step 2: The last component (the part separated by underscore) is drop and search is repeated with the resulting shorter name.
-//	          This process is repeated till the last Locale modifier is left.
+	//	      This process is repeated till the last Locale modifier is left.
 	//step 3: The search is continued using the full name of the bundle for the default Locale.
 	//step 4: Search for the ResourceBundle with just the name of the bundle.
 	//step 5: The search fail,throwing a missing bundle exception.
-// 			e.g: message_language_country_variant
-//	    	message_language_country
-//	      	message_language
-//	      	message_defaultLanguage_defaultCountry
-//	      	message_defaultLanguage
-//	      	message
-//	      	exception
+	// 	 e.g: message_language_country_variant
+	//	      message_language_country
+	//	      message_language
+	//	      message_defaultLanguage_defaultCountry
+	//	      message_defaultLanguage
+	//	      message
+	//	      exception
 
-	public class LocalizedMessage {
-		public static void main(String[] args) {
-			Locale.setDefault(new Locale("english","US"));
-			ResourceBundle rb=ResourceBundle.getBundle("message1");
-			String msg = rb.getString("welcome");
-			System.out.println(msg);
-			
-		}
-
+public class LocalizedMessage {
+	public static void main(String[] args) {
+//		Locale.setDefault(new Locale("english", "US"));
+//		ResourceBundle rb = ResourceBundle.getBundle("message_en");
+//		String msg = rb.getString("welcome");
+//		System.out.println(msg);
+		String lang="en";
+		String country="US";
+		Locale l=new Locale(lang, country);
+		ResourceBundle r=ResourceBundle.getBundle("com.Localization/Bundle", l);
+		String str=r.getString("language");
+		System.out.println(str);
 	}
 
+}
 
