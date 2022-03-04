@@ -24,16 +24,16 @@ public class DateTimeTest {
 
 		LocalDate localDate = ld.plusYears(2);
 		System.out.println(localDate.getDayOfWeek());
-		
+
 		ZoneId systemDefault = ZoneId.systemDefault();
 		System.out.println(systemDefault);
 		Set<String> availableZoneIds = ZoneId.getAvailableZoneIds();
-		//availableZoneIds.stream().forEach(System.out::println);
-		//availableZoneIds.forEach(System.out::println);
-		ZoneId newtime=ZoneId.of("Europe/Athens");
+		// availableZoneIds.stream().forEach(System.out::println);
+		// availableZoneIds.forEach(System.out::println);
+		ZoneId newtime = ZoneId.of("Europe/Athens");
 		System.out.println(newtime);
-		LocalTime justnow=LocalTime.now(newtime);
+		LocalTime justnow = LocalTime.now(newtime);
 		System.out.println(justnow);
-		
+
 	}
 }

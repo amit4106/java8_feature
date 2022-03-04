@@ -1,11 +1,20 @@
 package com.amit.java8.task;
 
-public class Test2 {
+import java.util.ArrayList;
 
-	static int a, b=10, c=4;
-	
-	static int sum=b+c;
-	public static void main(String[] args) {
-		System.out.println(sum);
+import javax.swing.text.html.HTMLDocument.Iterator;
+
+public class Test2 {
+public static void main(String[] args) {
+	ArrayList<String> al=new ArrayList<>();
+	al.add("A ");
+	al.add("B ");
+	al.add("C ");
+	al.add("D ");
+	//al.forEach(System.out::print);
+	java.util.Iterator<String> it = al.iterator();
+	while(it.hasNext()) {
+		System.out.print(it.next());
 	}
+}
 }
