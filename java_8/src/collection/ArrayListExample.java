@@ -42,12 +42,12 @@ public class ArrayListExample<T> extends ArrayList<Student>{
 //			System.out.println(iterator.next());
 //		}
 		// al.size();
-		al.forEach(System.out::println);
-		// al.remove(1);
-		// al.removeAll(al);
-		// al1.removeAll(al1);
-		// System.out.println(al.remove(s1));
-		// System.out.println("===========");
+//		al.forEach(System.out::println);
+//		al.remove(1);
+//		al.removeAll(al);
+//		al1.removeAll(al1);
+//		System.out.println(al.remove(s1));
+//		System.out.println("===========");
 //		System.out.println("--->>" + al.get(3));
 //		System.out.println("-->>" + al.getClass());// this method need to disscuss
 //		System.out.println(" ++ " + al.indexOf(al));//
