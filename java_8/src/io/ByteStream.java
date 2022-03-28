@@ -5,7 +5,7 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 
 /**
- * PipedInputStream,PipedOutputStream: These classes create a communication channel on
+ *  PipedInputStream,PipedOutputStream: These classes create a communication channel on
  *  which data can be send and received.PipedOutputStream sends the data and PipedInputStream receives the
  *  data sent on the channel.
  *  FileInputStream,FileOutsputStream: FileInputStream receives a byte stream from a file,FileOutputStream writes 

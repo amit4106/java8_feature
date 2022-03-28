@@ -1,6 +1,8 @@
-package api;
+package streamAPI;
 import java.util.Arrays;
 import java.util.List;
+
+import streamAPI.Dish.Type;
 /*
  Q1. select vegetarians menu?
  Q2. select all non vegetarians menu?

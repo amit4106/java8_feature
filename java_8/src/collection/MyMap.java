@@ -38,7 +38,7 @@ public class MyMap {
 		map.put(4, "Manish");
 		map.put(5, "Sonu");
 		System.out.println(map);
-//		for (Map.Entry<Integer, String> e : map.entrySet()) {
+		for (Map.Entry<Integer, String> e : map.entrySet()) {
 //			System.out.println(e.getKey() + " " + e.getValue());
 		}
 		

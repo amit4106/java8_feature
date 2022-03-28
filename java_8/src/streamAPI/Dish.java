@@ -1,4 +1,4 @@
-package api;
+package streamAPI;
 
 public class Dish {
 	private final String name;

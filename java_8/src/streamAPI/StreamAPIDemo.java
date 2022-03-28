@@ -1,4 +1,4 @@
-package api;
+package streamAPI;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
@@ -9,6 +9,8 @@ import static java.util.stream.Collectors.*;
 
 import java.time.LocalDate;
 import java.util.stream.Stream;
+
+import api.Student;
 /*
  Q3. filter those students who studies in 3rd year and belongs to "Bihar"?
  Q4. group Students by branch?

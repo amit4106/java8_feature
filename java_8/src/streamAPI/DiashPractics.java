@@ -1,4 +1,4 @@
-package api;
+package streamAPI;
 
 import java.util.Arrays;
 
@@ -7,7 +7,8 @@ import java.util.Locale.FilteringMode;
 import java.util.Map;
 import static java.util.stream.Collectors.*;
 import java.util.stream.Stream;
-import api.Dish.Type;
+
+import streamAPI.Dish.Type;
 
 /*
  Q1. select vegetarians menu?

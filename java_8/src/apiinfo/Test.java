@@ -7,7 +7,7 @@ import java.util.stream.Collectors;
 public class Test {
 
 	public static void main(String[] args) throws Exception {
-Class<?> forName = Class.forName("java.time.Map");
+Class<?> forName = Class.forName("java.util.List");
 Method[] methods = forName.getMethods();
 Arrays.stream(methods).map(m->m.getName()).distinct().collect(Collectors.toList()).forEach(s->System.out.println(s));
 	}

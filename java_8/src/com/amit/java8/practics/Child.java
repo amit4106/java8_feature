@@ -7,9 +7,8 @@ public class Child extends Parent1{
 void eat() {
 	System.out.println("birds eat");
 }
-void print() {
-	super.eat();
-}
 
 }
+
+
 
