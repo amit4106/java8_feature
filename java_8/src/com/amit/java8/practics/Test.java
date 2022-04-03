@@ -1,18 +1,17 @@
 package com.amit.java8.practics;
 
-import java.util.ArrayDeque;
-import java.util.Map;
-import java.util.TreeMap;
-import java.util.stream.Stream;
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
+import java.util.stream.IntStream;
 
 public class Test{
-
-	public static void main(String[] args)throws Exception {
-		System.out.println("Hi");
-		Thread.sleep(1000);
-		System.out.println("Hello");
-		
-	}
+	static int i=100;
+	public static void main(String[] args) {
+	Runnable tast=()->i--;
+	IntStream.range(1, 10).forEach(m-> new Thread(tast).run());
+	System.out.println(i);
+}	
 }
 
 //ctrl + 1 to store the value of variable.
