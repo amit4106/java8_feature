@@ -1,17 +1,17 @@
-package practiceJDBC;
+package com.jdbc.ps;
 
 import java.sql.Connection;
-import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-public class UpdateRecord {
+import practiceJDBC.JDBCUtil;
+
+public class InsertRecord {
 
 	public static void main(String[] args) {
-
+		String sql = "insert into college values(5,'NRI','Bhopal','MP')";
 		Connection con = null;
 		Statement st = null;
-		String sql = "update college set id=1000 where id=2";
 
 		try {
 			con = JDBCUtil.getMySQLConnection();
@@ -19,19 +19,18 @@ public class UpdateRecord {
 			int value = st.executeUpdate(sql);
 
 			if (value == 1) {
-				System.out.println("record has updated");
+				System.out.println("inserted");
 			} else {
-				System.out.println("Fail to update");
+				System.out.println("Fail to insert");
 			}
 		} catch (SQLException e) {
-			System.out.println("Exception occur while updating the data");
+			System.out.println("Exception occur while executing query");
 			e.printStackTrace();
 		}
 
 		finally {
-
 			JDBCUtil.closeResource(con, st);
-
 		}
+
 	}
 }

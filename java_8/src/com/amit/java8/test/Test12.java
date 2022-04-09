@@ -1,7 +1,5 @@
 package com.amit.java8.test;
 
-import com.amit.java8.practics.Test;
-
 public class Test12 {
 
 	protected int j=12;

@@ -1,7 +1,9 @@
 package com.amit.java8.practics;
 
-@FunctionalInterface
+
 public interface InterF {
-	 public void m1();
+default void m1() {
+	System.out.println("InterF");
+}
 	
 }

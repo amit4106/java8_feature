@@ -19,7 +19,7 @@ public class JDBCUtil {
 		Connection con=null;
 		String url=("jdbc:mysql://localhost:3306/testdb");
 		String userName="root";
-		String pswd="bharti9852613583";
+		String pswd="Patna*123";
 		try {
 			con = DriverManager.getConnection(url, userName, pswd);
 		} catch (SQLException e) {
