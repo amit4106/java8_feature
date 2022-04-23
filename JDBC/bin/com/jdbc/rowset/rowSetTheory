@@ -1,0 +1,24 @@
+SubTypes of RowSet interface
+1. JdbcRowSet
+2. CachedRowSet
+3. WebRowSet
+4. JoinRowSet
+5. FilterRowSet
+
+Types of RowSets
+
+1. Connected RowSet 
+2. Disconnected RowSet
+
+Connected RowSet
+____________________
+It is like connected ResultSet.
+Connected RowSet needs the connection as long as you are accessing the RowSet data.
+You cannot serialized the connected RowSet
+Ex- JdbcRowSet
+
+Disconnected RowSet
+It is not like ResultSet
+Disconnected RowSet does not need the connection value access the RowSet data.
+You can seriablised the RowSet
+Ex-CachedRowSet
