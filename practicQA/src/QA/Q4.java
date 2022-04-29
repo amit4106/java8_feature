@@ -46,9 +46,9 @@ public class Q4 {
 				minValue = arr[i];
 			}
 		}
-		System.out.println("Minimum value of Array is "+minValue);
+		System.out.println("Minimum value of Array is " + minValue);
 	}
-	
+
 	public static void maxArrayValue() {
 		int[] arr = { 20, 50, 70, 10, 5, 25, 90 };
 		int maxVal = arr[0];
@@ -57,7 +57,7 @@ public class Q4 {
 				maxVal = arr[i];
 			}
 		}
-		System.out.println("Maximum value of Array is "+maxVal);
+		System.out.println("Maximum value of Array is " + maxVal);
 	}
 
 	public static void main(String[] args) {
