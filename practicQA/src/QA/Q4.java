@@ -29,7 +29,7 @@ public class Q4 {
 		for (int i = 2; i <= num; i++) {
 			if (num % i == 0)
 				b = false;
-			break;
+				break;
 		}
 		if (b == true) {
 			System.out.println(num + " " + "is Prime Number");

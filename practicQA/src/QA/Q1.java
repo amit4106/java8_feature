@@ -1,3 +1,9 @@
+/**
+ * Q1.	Sum all the digits of given number. 
+ * 		ex : Given  input -12345
+ * 		Expected output -15
+ */
+
 package QA;
 
 import java.util.Scanner;

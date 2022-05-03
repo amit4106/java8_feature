@@ -1,0 +1,18 @@
+Locale means language.
+
+Localization : The process in which we adapt the software to the local language 
+			   and custom  is known as Localization.
+ResourceBundle :
+It is an abstract class available in java.util.pacakge
+PropertyResourceBundle and ListResourceBundle are child class of ResourceBundle.
+
+In which ResourceBundle loading properties files
+step 1:		The search starts by looking for an exact match for the ResourceBundle for the 
+			full name.
+step 2:		The last component (the part separated by _ ) is droped and the search is repeted
+			with the resulting sorted name this process is repeted till the last Locale
+			modifier is left.
+step 3:		The search is restared using the full name of the Bundle for the default
+			Locale.
+step 4:		Search for the ResourceBundle with just the name of the Bundle.
+step 5:		The search fails, throwing a missing Bundle exception

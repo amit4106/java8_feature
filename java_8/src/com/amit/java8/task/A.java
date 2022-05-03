@@ -1,9 +1,15 @@
 package com.amit.java8.task;
 
-public interface A {
+interface A extends B {
 
-	final int i = 10;
+}
 
-	void m1(int i);
+@FunctionalInterface
+interface B {
+	<T> void m1(T t);
+}
 
+
+interface C extends A, B {
+	<T> void m2(T t);
 }

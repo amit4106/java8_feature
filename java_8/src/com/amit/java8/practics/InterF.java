@@ -1,9 +1,8 @@
 package com.amit.java8.practics;
 
-@FunctionalInterface
 public interface InterF {
-
-//	boolean equels(Object object);
-	int toNumber();
+static int a=12;
+String s="hello";
 	
 }
+ abstract class Test10{}
