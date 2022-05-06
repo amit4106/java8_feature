@@ -1,11 +1,9 @@
-package api;
+package streamAPI;
 import java.util.Comparator;
 import java.util.List;
 import java.util.Map;
 import java.util.function.Predicate;
 import java.util.stream.Collectors;
-
-import streamAPI.StreamAPIDemo;
 
 /*
  Q3. filter those students who studies in 3rd year and belongs to "Bihar"?

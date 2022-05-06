@@ -1,4 +1,4 @@
-package api;
+package streamAPI;
 
 
 import java.util.Arrays;

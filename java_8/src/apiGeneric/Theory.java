@@ -2,66 +2,72 @@ package apiGeneric;
 
 import java.util.ArrayList;
 import java.util.Iterator;
-//import java.util.*; //but not recommended
 
 /**
- * String StringBuilder StringBuffer Random Math Object
- *
- * All 8 Wrapper classes Exception Number RuntimeException System Thread
- * Runnable ArrayList(java.util.ArrayList<E>)
+ * String
+ * StringBuffar
+ * StringBuilder
+ * Random
+ * Math
+ * Object
+ * All 8 wrapper classes
+ * Exception
+ * Number
+ * RuntimeException
+ * System
+ * Thread
+ * Runnable
+ * ArrayList(java.util.ArrayList<E>)
  * 
- * @author Yashwani
+ * @author Dell
  *
  */
-
 public class Theory {
 	public static void main(String[] args) {
+		ArrayList al = new ArrayList();
+		al.add("War");
+		al.add(10);
+		al.add("zone");
+		al.add(20);
+		
+		ArrayList<Integer> al2=new ArrayList<>(); //ArrayList Generic<E> type
+		
+		al2.add(10);
+		al2.add(20);
+		al2.add(30);
+		al2.add(40);
+		
+		// There are some approach to access the elements from ArrayList -
 
-		ArrayList arr = new ArrayList(); // by default iska object hogga.
-		arr.add("Ankush");
-		arr.add(10);
-		arr.add("Bhopal");
-		arr.add("Sirt");
-		ArrayList<String> al=new ArrayList<String>();
-		ArrayList<String> al2=new ArrayList<>();
-		ArrayList<Integer> al3=new ArrayList<>();
-		al2.add("Yashvani");
-		al3.add(20);
-		//int a=(int)arr.get(0);
-		//System.out.println(a);
-		String a=al2.get(0); 
-		System.out.println(a);
-		
-		
-		// Access array list
-		// Approach 1:Using normal for loop.
-		for (int i = 0; i < arr.size(); i++) {
-			System.out.println(arr.get(i));
+		// Approach 1: through "for loop"
+		for (int i = 0; i < al.size(); i++) {
+			System.out.println(al.get(i));
 		}
-		System.out.println("***************");
-		// Approach 2: while loop
+		System.out.println("__________for loop__________");
+
+		// Approach 2: through "enhance for loop"
+		for (Object obj : al) {
+			System.out.print(obj + " " + "\n");
+		}
+		System.out.println("__________enhance for loop__________");
+
+		// Approach 3: Using "while loop"
 		int i = 0;
-		while (i < arr.size()) {
-			System.out.println(arr.get(i));
+		while (i < al.size()) {
+			System.out.println(al.get(i));
 			i++;
+		}
+		System.out.println("__________while loop__________");
 
-		}
-		System.out.println("************");
-		//Approach 3:Enhance for loop
-		for(Object o:arr) {
-			System.out.println(o);
-		}
-		System.out.println("****************");
-		//Approach 4: Using iterator
-		Iterator iterator = arr.iterator();
+		//Approach 4: using "Iterator"
+		Iterator iterator = al.iterator();
 		while(iterator.hasNext()) {
 			System.out.println(iterator.next());
 		}
-		System.out.println("*************");
-		System.out.println("Approoach 5");
-		arr.forEach(System.out::println);
+		System.out.println("__________iterator()__________");
 		
-
+		//Approach 5: using "for each"
+		al.forEach(System.out::println);
+		System.out.println("__________forEach()__________");
 	}
-
 }

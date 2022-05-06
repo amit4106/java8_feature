@@ -1,4 +1,4 @@
-package api;
+package apiGeneric;
 
 import java.util.ArrayList;
 import java.util.List;

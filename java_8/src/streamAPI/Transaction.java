@@ -1,4 +1,4 @@
-package api;
+package streamAPI;
 
 public class Transaction {
 	private final Trader trader;

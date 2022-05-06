@@ -1,4 +1,4 @@
-package api;
+package streamAPI;
 
 public class Trader {
 	private final String name;

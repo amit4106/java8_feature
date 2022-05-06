@@ -16,9 +16,8 @@ public class NioString {
 		try {
 			lines = Files.lines(path);
 			Map<String, Long> collect = lines.collect(Collectors.groupingBy(String::toString, Collectors.counting()));
-			// collect.forEach((k,v)->System.out.println(k+" "+v));
+//			collect.forEach((k, v) -> System.out.println(k + " " + v));
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 
@@ -27,7 +26,6 @@ public class NioString {
 			entry.forEach(System.out::println);
 
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}

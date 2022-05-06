@@ -1,4 +1,4 @@
-package api;
+package apiGeneric;
 
 public interface GenericInterF {
 
