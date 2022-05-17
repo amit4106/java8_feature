@@ -59,7 +59,8 @@ public class DiashPractics {
 		// getMenu().stream().filter(p->{return
 		// p.getCalories()>500;}).collect(Collectors.groupingBy(Dish::getType)).forEach((key,value)->System.out.println(key+
 		// " "+value));
-		//	getMenu().stream().collect(groupingBy(Dish::getType,filtering(p->{return p.getCalories()>500;}),toList()));
+		// getMenu().stream().collect(groupingBy(Dish::getType,filtering(p->{return
+		// p.getCalories()>500;}),toList()));
 		Map<Type, Map<Boolean, List<Dish>>> collect3 = getMenu().stream()
 				.collect(groupingBy(Dish::getType, groupingBy(Dish::isVegetarian)));
 		for (Map.Entry<Type, Map<Boolean, List<Dish>>> e : collect3.entrySet()) {

@@ -9,8 +9,8 @@ public class Demo {
 		Connection con=null;
 		Statement st=null;
 		String userName="root";
-		String pswd="bharti9852613583";
-		String query="insert into employee values(104, 10, 'Preet', 'Rathor', 3000, 'WB')";
+		String pswd="Patna@123";
+		String query="insert into employee values(104, 10, 'Amit', 'Sharma', 4000, 'Bihar')";
 		String url="jdbc:mysql://localhost:3306/testdb";
 		
 		Class.forName("com.mysql.cj.jdbc.Driver");
