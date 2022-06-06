@@ -5,8 +5,6 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
-import java.util.List;
-import java.util.stream.Stream;
 
 public class FilesDemo {
 public static void main(String[] args) {
@@ -26,7 +24,6 @@ public static void main(String[] args) {
 	try {
 		Files.readAllLines(Paths.get(f.getAbsolutePath()));
 	} catch (IOException e) {
-		// TODO Auto-generated catch block
 		e.printStackTrace();
 	}
 	

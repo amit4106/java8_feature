@@ -12,7 +12,7 @@ public class DateTimeTest {
 	public static void main(String[] args) {
 
 		LocalDate ld = LocalDate.now();
-		System.out.println(ld);
+//		System.out.println(ld);
 
 		DateTimeFormatter df = DateTimeFormatter.ofPattern("dd/MM/yyyy");
 		String date = df.format(ld);

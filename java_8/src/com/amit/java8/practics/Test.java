@@ -1,33 +1,40 @@
 package com.amit.java8.practics;
 
-import java.time.ZoneId;
-import java.util.function.BiConsumer;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 
 public class Test {
-
 	public static void main(String[] args) {
-//	Stream<Client> list=Stream.of(new Client("Will","vps server",200), new Client("Rachel","java program",1200),
-//								new Client("Anthony","Configuration",1000));
-//				DoubleStream<Client> fun= Client::getBudget;
+	ArrayList<Dog> dogList=new ArrayList<>();
+	dogList.add(new Dog("Lazy", "John", 3));
+	dogList.add(new Dog("White", "Henry", 2)); 
+	dogList.add(new Dog("Blacky", "Bert", 5));
+	dogList.add(new Dog("Tazan", "Jack", 1));
+	
+	Sort1 s1=new Sort1();
+	Collections.sort(dogList, s1);
+	System.out.println(s1);
+	}
+	
+	static class Sort1 implements Comparator<Dog>{
 
-		BiConsumer<Integer, Integer> consumer=( i, b)->System.out.println(i+b);
-}}
-//
-//class Client{
-//	double budget;
-//	String name, project;
-//	Client(String n, String pr, double p){
-//		budget=p;
-//		name=n;
-//		project =pr;
-//	}
-//	public double getBudget() {
-//		return budget;
-//	}
-//	public String getName() {
-//		return name;
-//	}
-//	public String toString() {
-//		return name+" "+budget;
-//	}
-//}
+		@Override
+		public int compare(Dog first, Dog second) {
+			return first.name.compareTo(second.name);
+		}
+		
+	}
+}
+
+class Dog{
+	String name; 
+	String owner;
+	int age;
+	Dog(String n, String o, int a){
+		name=n; owner=o; age=a;
+	}
+	public String toString() {
+		return owner;
+	}
+}

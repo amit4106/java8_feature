@@ -5,20 +5,21 @@ import java.io.FileReader;
 import java.io.IOException;
 
 /**
- * Important classess
- * 1	Reader->
- * 2	BufferedReader->LineNumerReader
- * 3	FilterReader->PushBackReader
- * 4	InputStreamReader->FileReader
- * 5	StringReader
+ * Important classes
+ * 	Reader
+ * 1	BufferedReader->	LineNumerReader
+ * 2	FilterReader->		PushBackReader
+ * 3	InputStreamReader->	FileReader
+ * 4	StringReader
+ * 	
  * 
- * Writer
- * BufferedWriter
- * PrinterWriter
- * OutputStreamWriter
- * FileWriter
- * FilterWriter
- * StringWriter
+ * 	Writer
+ * 1	BufferedWriter
+ * 2	PrintWriter
+ * 3	OutputStreamWriter
+ * 4	FileWriter
+ * 5	FilterWriter
+ * 6	StringWriter
  *   
  * @author dell
  *
