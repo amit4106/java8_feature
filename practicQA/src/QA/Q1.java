@@ -25,9 +25,9 @@ public class Q1 {
 		int num=sc.nextInt();
 		for (int i = 1; i <= num; i++) {
 			result = result + i;
-			System.out.println(result);
+			
 		}
-		
+		System.out.println(result);
 	}
 
 	public static void main(String[] args) {

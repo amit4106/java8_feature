@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="ao" class="com.ioc.A">
+		<property name="a" value="50" />
+		<property name="name" value="Pratik" />
+	</bean>
+
+	<bean id="bo" class="com.ioc.B">
+		<constructor-arg value="100" />
+		<constructor-arg value="Hello Pratik" />
+	</bean>
+
+	<!-- more bean definitions go here -->
+	<bean id="hello" class="com.ioc.Hello" scope="prototype" autowire="default">
+		<property name="aObj" ref="ao" />
+		<property name="bObj" ref="bo" />
+	</bean>
+
+</beans>

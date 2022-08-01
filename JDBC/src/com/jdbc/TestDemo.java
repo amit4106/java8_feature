@@ -9,7 +9,7 @@ public class TestDemo {
 		String url="jdbc:mysql://localhost:3306/testdb?autoReconnect=true&useSSL=false";
 		String uName="root";
 		String pswd="Patna@123";
-		String sql="select depar_id from employee";
+		String sql="select * from student";
 		
 		Class.forName("com.mysql.cj.jdbc.Driver");
 		con=DriverManager.getConnection(url, uName, pswd);
@@ -18,8 +18,7 @@ public class TestDemo {
 		
 		String userDate="";
 		while(rs.next()) {
-//			userDate=rs.getInt(1)+" "+rs.getInt(2)+" "+rs.getString(3)+" "+rs.getString(4)+" "+
-//		rs.getInt(5)+" "+rs.getString(6);
+			userDate=rs.getInt(1)+" "+rs.getString(2);
 			System.out.println(rs.getInt(1)+" ");
 		}
 		

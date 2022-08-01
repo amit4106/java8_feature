@@ -11,11 +11,12 @@ public class Q6 {
 		int[] arr = { 20, 5, 70, 50, 10, 90 };
 		System.out.println("The given array is : " );
 		for (int i = 0; i < arr.length; i++) {
-			System.out.println(arr[i]);
+			System.out.print(arr[i]+",");
 		}
-		System.out.println("Reversed array :");
+		
+		System.out.println("\n"+"Reversed array :");
 		for(int i=arr.length-1;i>=0;i--) {
-			System.out.println(arr[i]);
+			System.out.print(arr[i]+",");
 		}
 	}
 

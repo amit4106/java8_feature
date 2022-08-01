@@ -2,6 +2,7 @@ package collection;
 
 import java.util.ArrayList;
 import java.util.Iterator;
+import java.util.concurrent.CopyOnWriteArrayList;
 
 public class ArrayListExample<T> extends ArrayList<Student>{
 	
@@ -14,8 +15,9 @@ public class ArrayListExample<T> extends ArrayList<Student>{
 	}
 
 	public static void main(String[] args) {
-		ArrayList<Student> al = new ArrayList<>();
-		al.ensureCapacity(2);
+//		ArrayList<Student> al = new ArrayList<>();
+		CopyOnWriteArrayList<Student> al=new CopyOnWriteArrayList<>();
+//		al.ensureCapacity(2);
 		ArrayList<Student> al1 = new ArrayList<>();
 		al1.ensureCapacity(3);
 		Student s1 = new Student(25, "Yogi", 91);
@@ -37,10 +39,11 @@ public class ArrayListExample<T> extends ArrayList<Student>{
 		for(Object obj: array) {
 			System.out.println("toArray --> "+obj);
 		}
-//		Iterator<Student> iterator = al.iterator();
-//		while(iterator.hasNext()) {
-//			System.out.println(iterator.next());
-//		}
+		Iterator<Student> iterator = al.iterator();
+		while(iterator.hasNext()) {
+			System.out.println(iterator.next());
+			al.add(s1);
+		}
 		// al.size();
 //		al.forEach(System.out::println);
 //		al.remove(1);

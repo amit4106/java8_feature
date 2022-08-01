@@ -10,7 +10,7 @@ public class Demo2 {
 		Statement st=null;
 		String url=("jdbc:mysql://localhost:3306/testdb");
 		String userName="root";
-		String pswd="bharti9852613583";
+		String pswd="Patna@123";
 		String sql="insert into employee values(106, 11, 'Riku', 'Rajput', 3500, 'MP')";
 		
 		Class.forName("com.mysql.jdbc.Driver");
